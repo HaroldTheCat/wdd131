@@ -1,0 +1,8 @@
+.content{font-family: 'Times New Roman', Times, serif;font-size: 20px;width: 600px;align-items: center;display: flex; flex-direction: column; margin: auto;padding: auto;
+    padding: 0; line-height: 1.5;}
+h4{color: #006EB6; border-bottom: 2px solid lightgray ;width: 600px;}
+img{width: 150px;margin-top: 10px;}
+p{text-align: left;}
+.title{align-items: center;text-transform: uppercase;letter-spacing: 10%;text-align: center;margin: auto;}
+
+.list li{margin-bottom: 10px;}
