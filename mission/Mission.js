@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (selectedValue === "Light") {
             bodyElement.classList.remove("dark");
             imageElement.src="byui-logo_blue.webp"
-            console.log("Body class changed to Light");
+            console.log("Body class changed to 'Light'");
         }
     });
 });
