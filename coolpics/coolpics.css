@@ -128,22 +128,18 @@ footer{ background-color: #8AA29E; text-align: center; height:max-content; color
 button {
     display: none;}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .gallery {
-        grid-template-columns: 1fr; /* Change to single column layout */
-        grid-template-rows: auto; /* Auto adjust row height */
+        grid-template-columns: 1fr 1fr; 
         grid-template-areas: 
-          "."
-          "gal_1"
-          "gal_2"
-          "gal_3"
-          "gal_4"
-          "gal_5"
-          "gal_6"
-          "gal_7"
-          "gal_8"
-          "gal_9"; 
+          "gal_1 gal_2"
+          "gal_3 gal_4"
+          "gal_5 gal_6"
+          "gal_7 gal_8"
+          "gal_9 ."; /* Leave an empty cell if the number of buttons is odd */
     }
+
+
 
     .gameboy-navbar li {
         display: block; /* Change to block display for navigation items */
@@ -167,18 +163,22 @@ button {
     button{display: contents;background-color: #8AA29E; border: none;cursor: pointer;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     .gallery {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr; /* Change to single column layout */
+        grid-template-rows: auto; /* Auto adjust row height */
         grid-template-areas: 
-          "gal_1 gal_2"
-          "gal_3 gal_4"
-          "gal_5 gal_6"
-          "gal_7 gal_8"
-          "gal_9 ."; /* Leave an empty cell if the number of buttons is odd */
+          "."
+          "gal_1"
+          "gal_2"
+          "gal_3"
+          "gal_4"
+          "gal_5"
+          "gal_6"
+          "gal_7"
+          "gal_8"
+          "gal_9"; 
     }
-
-
 
     .gameboy-navbar li {
         display: block; /* Change to block display for navigation items */
