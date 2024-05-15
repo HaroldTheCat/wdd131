@@ -167,7 +167,7 @@ button {
     button{display: contents;background-color: #8AA29E; border: none;cursor: pointer;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
     .gallery {
         grid-template-columns: 1fr 1fr; /* Change to two column layout */
         grid-template-rows: auto; /* Auto adjust row height */
