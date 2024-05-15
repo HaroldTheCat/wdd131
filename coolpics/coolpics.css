@@ -5,23 +5,24 @@
     gap: 0px 0px; 
     grid-template-areas: 
       ". . . . . . ."
-      ". button_1 . button_2 . button_3 ."
+      ". gal_1 . gal_2 . gal_3 ."
       ". . . . . . ."
-      ". button_4 . button_5 . button_6 ."
+      ". gal_4 . gal_5 . gal_6 ."
       ". . . . . . ."
-      ". button_7 . button_8 . button_9 ."
+      ". gal_7 . gal_8 . gal_9 ."
       ". . . . . . ."; 
 }
 
-.button_1 { grid-area: button_1; margin: auto; object-fit: cover; }
-.button_2 { grid-area: button_2; margin: auto; object-fit: cover; }
-.button_3 { grid-area: button_3; margin: auto; object-fit: cover; }
-.button_4 { grid-area: button_4; margin: auto; object-fit: cover; }
-.button_5 { grid-area: button_5; margin: auto; object-fit: cover; }
-.button_6 { grid-area: button_6; margin: auto; object-fit: cover; }
-.button_7 { grid-area: button_7; margin: auto; object-fit: cover; }
-.button_8 { grid-area: button_8; margin: auto; object-fit: cover; }
-.button_9 { grid-area: button_9; margin: auto; object-fit: cover; }
+.gal_1 { grid-area: gal_1; margin: auto; object-fit: cover; }
+.gal_2 { grid-area: gal_2
+    ; margin: auto; object-fit: cover; }
+.gal_3 { grid-area: gal_3; margin: auto; object-fit: cover; }
+.gal_4 { grid-area: gal_4; margin: auto; object-fit: cover; }
+.gal_5 { grid-area: gal_5; margin: auto; object-fit: cover; }
+.gal_6 { grid-area: gal_6; margin: auto; object-fit: cover; }
+.gal_7 { grid-area: gal_7; margin: auto; object-fit: cover; }
+.gal_8 { grid-area: gal_8; margin: auto; object-fit: cover; }
+.gal_9 { grid-area: gal_9; margin: auto; object-fit: cover; }
 
 body {
     background-color: #F1EDEE; 
@@ -133,16 +134,52 @@ button {
         grid-template-rows: auto; /* Auto adjust row height */
         grid-template-areas: 
           "."
-          "button_1"
-          "button_2"
-          "button_3"
-          "button_4"
-          "button_5"
-          "button_6"
-          "button_7"
-          "button_8"
-          "button_9"; 
+          "gal_1"
+          "gal_2"
+          "gal_3"
+          "gal_4"
+          "gal_5"
+          "gal_6"
+          "gal_7"
+          "gal_8"
+          "gal_9"; 
     }
+
+    .gameboy-navbar li {
+        display: block; /* Change to block display for navigation items */
+        margin-right: 0; /* Remove right margin */
+        text-align: center;
+        padding-right: 25px;
+    }
+
+    img{width: 250px;height: 250px;object-fit: cover; background-color: white;}
+
+    h3 {
+        font-family: monospace; 
+        font-size: 17px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 23px;
+        text-align: center; 
+    color: #3D5467;}
+        
+    button{display: contents;background-color: #8AA29E; border: none;cursor: pointer;}
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr; /* Change to two column layout */
+        grid-template-rows: auto; /* Auto adjust row height */
+        grid-template-areas: 
+          "gal_1 gal_2"
+          "gal_3 gal_4"
+          "gal_5 gal_6"
+          "gal_7 gal_8"
+          "gal_9 ."; /* Leave an empty cell if the number of buttons is odd */
+    }
+
+
 
     .gameboy-navbar li {
         display: block; /* Change to block display for navigation items */
