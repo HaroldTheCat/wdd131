@@ -128,7 +128,7 @@ footer{ background-color: #8AA29E; text-align: center; height:max-content; color
 button {
     display: none;}
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .gallery {
         grid-template-columns: 1fr; /* Change to single column layout */
         grid-template-rows: auto; /* Auto adjust row height */
