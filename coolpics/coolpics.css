@@ -125,9 +125,56 @@ img{width: 250px;height: 250px;object-fit: cover;}
 
 footer{ background-color: #8AA29E; text-align: center; height:max-content; color: #3D5467; width: 100%;}
 
-button {
+.menu-button {
     display: none;}
 
+
+    .hide-items li:not(:first-child) {
+        display: none;}
+
+/* Hide the modal by default */
+.viewer.hide {
+    display: none;
+}
+
+/* Modal container styles */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75); /* Greyed-out background with transparency */
+    display: grid;
+    place-items: center;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Center the image within the modal */
+.viewer img {
+    width: auto;
+}
+
+/* Close button styles */
+.close-viewer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it is above the image */
+}
+
+/* Gallery styles */
+.gallery img {
+    cursor: pointer;
+    margin: 10px;
+}
+
+        
 @media screen and (max-width: 1000px) {
     .gallery {
         grid-template-columns: 1fr 1fr; 
@@ -136,7 +183,7 @@ button {
           "gal_3 gal_4"
           "gal_5 gal_6"
           "gal_7 gal_8"
-          "gal_9 ."; /* Leave an empty cell if the number of buttons is odd */
+          "gal_9 ."; 
     }
 
 
@@ -162,6 +209,8 @@ button {
         
     button{display: contents;background-color: #8AA29E; border: none;cursor: pointer;}
 }
+
+
 
 @media screen and (max-width: 600px) {
     .gallery {
