@@ -152,7 +152,10 @@ footer{ background-color: #8AA29E; text-align: center; height:max-content; color
 
 /* Center the image within the modal */
 .viewer img {
+    max-width: 90%;
+    max-height: 90%;
     width: auto;
+    height: auto; 
 }
 
 /* Close button styles */
