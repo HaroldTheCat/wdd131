@@ -1,6 +1,6 @@
 body {
     font-family: 'Helvetica', Arial, sans-serif;
-    color: #ef476f;
+    color: #B20A32;
     background-color: #fefefe;
     margin: 0;
     padding: 0;
@@ -87,7 +87,7 @@ main {
 .article-content h2 {
     margin: 0 0 10px 0; /* Add margin-bottom to create space below the title */
     font-size: 1.5em;
-    color: #ef476f;
+    color: #B20A32;
 }
 
 .article-content p {
@@ -99,7 +99,7 @@ main {
 }
 
 .article-content .read-more {
-    color: #ef476f;
+    color: #B20A32;
     font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ footer {
     position: absolute;
     top: -40px;
     left: 0;
-    background-color: #ef476f;
+    background-color: #B20A32;
     color: #fff;
     padding: 5px;
     z-index: 1000;
