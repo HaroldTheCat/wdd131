@@ -106,12 +106,14 @@ main {
 .filters {
     padding: 20px;
     border-radius: 8px;
+    color: black;
 }
 
 footer {
     background-color: #073b4c;
     padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
 .skiptocontent a {
