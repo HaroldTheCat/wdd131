@@ -1,0 +1,130 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #473144;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    color: #ef476f;
+    text-align: center;
+}
+
+a {
+    color: #ef476f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #073b4c;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.articles {
+    display: grid;
+    gap: 20px;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #073b4c;
+}
+
+.article-meta {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.article img {
+    width: 150px; /* Set the desired width for the images */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Add margin-bottom to create space below the image */
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-content h2 {
+    margin: 0 0 10px 0; /* Add margin-bottom to create space below the title */
+    font-size: 1.5em;
+    color: #ef476f;
+}
+
+.article-content p {
+    margin: 5px 0;
+}
+
+.article-content .description {
+    margin-top: 10px;
+}
+
+.article-content .read-more {
+    color: #ef476f;
+    font-weight: bold;
+}
+
+.filters {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #073b4c;
+    padding: 20px;
+    text-align: center;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #ef476f;
+    color: #fff;
+    padding: 5px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
