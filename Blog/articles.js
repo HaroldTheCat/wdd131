@@ -9,7 +9,7 @@ const articles = [
     imgAlt: "Book cover for Septimus Heap 1",
     ages: "10-14",
     genre: "Fantasy",
-    stars: "****"
+    stars: "⭐⭐⭐⭐"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const articles = [
     imgAlt: "Book cover for Magnus Chase 1",
     ages: "12-16",
     genre: "Fantasy",
-    stars: "****"
+    stars: "⭐⭐⭐⭐"
   },
   {
     id: 3,
