@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             photoInner.classList.add('flipped-left');
             setTimeout(() => {
-                photo.src = '/scrumbo/images/harold_sip.png' // Change back to the original image
+                photo.src = 'scrumbo/images/harold_sip.png' // Change back to the original image
                 photoInner.classList.remove('flipped-left');
             }, 500); // Delay changing the image until after the flip animation (0.6s)
         }
