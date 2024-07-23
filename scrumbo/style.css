@@ -1,0 +1,201 @@
+body {
+    background: rgb(15,56,15);
+background: linear-gradient(139deg, rgba(15,56,15,1) 0%, rgba(8,75,8,1) 50%, rgba(14,128,6,1) 100%);
+height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer, p, h1 {
+    color: #9ED11F;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+p, h1, h3, blockquote, pre {
+    font-family: monospace;
+    line-height: 23px;
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+h3, blockquote {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+pre {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.Content {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.066);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 15px 40px rgba(0, 0, 0, 0.4), 0 20px 60px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+#photo {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    transition: transform 0.6s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    outline: none;
+}
+
+#photo:hover, #photo:focus {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.photo-container {
+    perspective: 1000px;
+    position: relative;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.photo-inner {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flipped-right {
+    transform: rotateY(180deg);
+}
+
+.flipped-left {
+    transform: rotateY(-180deg);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gameboy-dialogue {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #9ED11F;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.066);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.gameboy-navbar {
+    padding: 10px 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.066);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 20px 60px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.gameboy-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gameboy-navbar li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.gameboy-navbar a {
+    font-family: monospace;
+    color: #8fbd1c;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+    display: inline-block;
+}
+
+.gameboy-navbar a:hover, .gameboy-navbar a:focus {
+    color: #ffffff;
+    transform: translateY(-10px);
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.icon-item {
+    display: inline-block;
+}
+
+.hidden-item {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    transform: translateY(0);
+}
+
+.hidden-item:hover, .hidden-item:focus {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #8fbd1c;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .gameboy-navbar ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .gameboy-navbar ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+}
+
+#photo2 {
+    display: block;
+    margin: 10px auto;
+    width: 25%;
+}
